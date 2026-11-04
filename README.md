@@ -30,6 +30,7 @@ flowchart LR
     D --> E[Validation temperature and abstention threshold]
     E --> F[Locked test and separate OOD report]
 ```
+
 ## Reproduce
 
 ```bash
@@ -46,6 +47,8 @@ CPU is the reference execution device. Full runs and checkpoints go to ignored
 ```bash
 # Downloads public Apache-2.0 Google BERT weights on first run.
 uv run python -m semadapt.train
+uv run python -m semadapt.predict --checkpoint runs/reference/lora-7 --text "track my order"
+uv run python -m semadapt.matched --runs runs/reference
 # Label budget experiment, same validation/test examples:
 uv run python -m semadapt.train --train-fraction .1 --modes lora full --out runs/low-label
 # CI/offline correctness path: RANDOM tiny BERT initialization, not pretrained evidence.
@@ -56,7 +59,11 @@ Pretrained model: `google/bert_uncased_L-2_H-128_A-2`, pinned revision
 `30b0a37ccaaa32f332884b96992754e246e48c5f`. The adapter targets attention query
 and value projections (rank 8, alpha 16). The classifier is explicitly saved
 with the adapter. Every training run reloads its saved checkpoint and verifies
-test-logit equivalence within 1e-5. Tests verify frozen base parameters remain
+test-logit equivalence within 1e-5. Each checkpoint includes `inference.json`
+with semantic labels, temperature, abstention threshold, and the immutable base
+revision; inference reloads these settings. The smoke path also saves its random
+base locally so its adapter can be reloaded without network access. Tests verify
+frozen base parameters remain
 unchanged while adapter and classification-head parameters update.
 
 ## Measured reference experiment
@@ -66,12 +73,22 @@ CPU; eight epochs; seeds 7, 19, 31; 1,440 train, 360 validation, 1,080 test;
 5–7 test. Exact text duplication across partitions is rejected. Checkpoints are
 chosen by validation cross entropy. No test-set optimization is performed.
 
-| Method | Trainable parameters | Test macro F1, mean ± seed SD |
-|---|---:|---:|
-| TF-IDF + logistic regression | n/a | 0.423 |
-| head | 774 | 0.320 ± 0.017 |
-| lora | 8,966 | 0.204 ± 0.054 |
-| full | 4,386,694 | 0.370 ± 0.145 |
+| Method | Trainable parameters | Familiar-template macro F1 | Unseen-template macro F1, mean ± seed SD |
+|---|---:|---:|---:|
+| TF-IDF + logistic regression | n/a | not measured in this slice | 0.421 |
+| head | 774 | 0.631 | 0.370 ± 0.037 |
+| lora | 8,966 | 0.393 | 0.208 ± 0.035 |
+| full | 4,386,694 | 0.938 | 0.372 ± 0.154 |
+
+The familiar-template slice contains 360 new texts generated with seed 1023 and
+disjoint exact strings/IDs, but deliberately reuses training template families.
+It measures closed-template fitting, not transfer to new language. The shifted
+test remains the primary generalization check. [Both slices are retained](results/matched-template.json).
+
+The reviewed generator uses independent fixed-width order identifiers; the
+previous partition-coded identifiers were removed. All displayed training and
+evaluation results were rerun after that correction. Scores should be compared
+within this protocol, not directly against the initial commit's different inputs.
 
 The small pretrained model and narrow training template inventory do not yield
 strong transfer to unseen phrasing. LoRA is parameter efficient here, but does
@@ -81,7 +98,9 @@ at a fixed epoch budget and therefore are not compute-matched comparisons.
 
 ## Evaluation contract
 
-- Confusion matrices, per-run macro F1 and stratified example-bootstrap intervals.
+- Per-class precision/recall/F1, confusion matrices, per-template accuracy,
+  example-bootstrap intervals, and label-stratified **template-cluster bootstrap**
+  intervals. The cluster unit is an authored template family, not a generated sentence.
 - Multiclass NLL, Brier score, and ten-bin expected calibration error before and
   after validation-only temperature scaling.
 - A validation-only threshold maximizes coverage subject to observed validation
@@ -95,8 +114,10 @@ at a fixed epoch budget and therefore are not compute-matched comparisons.
 See [raw metrics](results/metrics.json), [error analysis](ERROR_ANALYSIS.md), and
 [high-confidence mistakes](results/errors.json). Temperature scaling can worsen
 test calibration under distribution shift; both sets of measurements are kept.
-The bootstrap resamples examples within labels and does not quantify uncertainty
-over unseen template families or domains. The generator is deliberately limited
+The example bootstrap conditions on fixed templates. The separate cluster
+bootstrap resamples the three held-out families within each intent; with so few
+families it remains unstable and cannot establish uncertainty over new domains.
+The generator is deliberately limited
 and cannot establish real-world NLU or deployment readiness.
 
 ## Layout and extension points
@@ -105,7 +126,8 @@ and cannot establish real-world NLU or deployment readiness.
 |---|---|
 | `data.py` | Generation, family split, deduplication, fingerprint |
 | `train.py` | Custom optimization, trainable scopes, serialization and reload |
-| `evaluate.py` | Temperature, threshold, bootstrap, calibration and confusion |
+| `evaluate.py` | Temperature, threshold, per-class metrics and clustered uncertainty |
+| `predict.py` / `matched.py` | Saved-model inference and a separate familiar-template check |
 
 Future work should use additional independently authored template families,
 human-reviewed ambiguity annotations, stronger encoders, and domain-separated
