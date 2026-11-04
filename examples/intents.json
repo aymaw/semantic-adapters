@@ -1,0 +1,62 @@
+[
+  {
+    "text": "can you locate the parcel x5022 with my travel charger",
+    "label": 0,
+    "family": "track/5"
+  },
+  {
+    "text": "delivery estimate needed for my fitness watch purchase x7020",
+    "label": 0,
+    "family": "track/7"
+  },
+  {
+    "text": "reimburse the cost of my delivered travel charger x5014",
+    "label": 2,
+    "family": "refund/5"
+  },
+  {
+    "text": "i do not want to cancel x6044 just track my fitness watch",
+    "label": 0,
+    "family": "track/6"
+  },
+  {
+    "text": "are there units of green speaker ready to purchase x5030",
+    "label": 4,
+    "family": "stock/5"
+  },
+  {
+    "text": "can you locate the parcel x5033 with my blue headphones",
+    "label": 0,
+    "family": "track/5"
+  },
+  {
+    "text": "can you locate the parcel x5031 with my blue headphones",
+    "label": 0,
+    "family": "track/5"
+  },
+  {
+    "text": "reimburse the cost of my delivered fitness watch x5011",
+    "label": 2,
+    "family": "refund/5"
+  },
+  {
+    "text": "keep the green speaker order x6017 but change where it ships",
+    "label": 3,
+    "family": "address/6"
+  },
+  {
+    "text": "tell me whether the desk lamp is sold out x7024",
+    "label": 4,
+    "family": "stock/7"
+  },
+  {
+    "text": "do not cancel anything return the delivered phone stand x6037",
+    "label": 2,
+    "family": "refund/6"
+  },
+  {
+    "text": "start a return for the desk lamp bought in x7010",
+    "label": 2,
+    "family": "refund/7"
+  }
+]
