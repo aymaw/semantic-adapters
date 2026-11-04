@@ -31,3 +31,13 @@ Next experiments should use independent template authors, a broader validation
 inventory, stronger pretrained encoders, domain/slot holdouts, and human-reviewed
 minimal pairs. Preserve this test set when comparing them. Do not claim the
 current synthetic scores establish real-world NLU quality.
+
+## Review revision
+
+Order numbers no longer encode template partition. New reference and low-label
+results use the same independent-identifier generator and unchanged learning
+settings. The separate familiar-template report quantifies fitting on known
+surface forms; it must not be pooled with the unseen-template test or described
+as real-world generalization. Per-class and template-level reports expose where
+aggregate F1 conceals systematic mistakes. Cluster intervals condition on a very
+small authored inventory and should be interpreted cautiously.
