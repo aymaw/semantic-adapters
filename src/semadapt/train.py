@@ -50,7 +50,11 @@ def make_model(mode, smoke, out, data, seed):
         model = AutoModelForSequenceClassification.from_pretrained(
             MODEL, revision=REVISION, num_labels=len(LABELS), attn_implementation="eager"
         )
+    model.config.id2label = dict(enumerate(LABELS))
+    model.config.label2id = {label: i for i, label in enumerate(LABELS)}
     if mode == "lora":
+        if smoke:
+            model.save_pretrained(out / "smoke-base")
         model = get_peft_model(
             model,
             LoraConfig(
@@ -60,6 +64,7 @@ def make_model(mode, smoke, out, data, seed):
                 lora_dropout=0.05,
                 target_modules=["query", "value"],
                 modules_to_save=["classifier"],
+                revision=None if smoke else REVISION,
             ),
         )
     elif mode == "head":
@@ -96,12 +101,13 @@ def evaluate_all(logits, data):
     temperature = fit_temperature(logits["validation"], val_labels)
     threshold = select_threshold(probabilities(logits["validation"], temperature), val_labels)
     test_labels = np.array([r["label"] for r in data["test"]])
+    families = [r["family"] for r in data["test"]]
     return {
         "temperature": temperature,
         "validation_threshold": threshold,
-        "uncalibrated_test": metrics(probabilities(logits["test"]), test_labels),
+        "uncalibrated_test": metrics(probabilities(logits["test"]), test_labels, groups=families),
         "calibrated_test": metrics(
-            probabilities(logits["test"], temperature), test_labels, threshold
+            probabilities(logits["test"], temperature), test_labels, threshold, groups=families
         ),
         "ood_n": len(data["ood"]),
         "ood_false_accept_rate": float(
@@ -119,6 +125,8 @@ def run(
     train_fraction=1.0,
 ):
     out = Path(out)
+    if epochs < 1 or not seeds or not modes:
+        raise ValueError("Use positive epochs and nonempty seed/mode lists")
     out.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
@@ -137,6 +145,7 @@ def run(
     (out / "dataset.json").write_text(json.dumps(data, indent=2))
     report = {
         "synthetic_only": True,
+        "protocol": "template-holdout-v2-independent-order-identifiers",
         "smoke_random_initialization": smoke,
         "base_model": None if smoke else MODEL,
         "revision": None if smoke else REVISION,
@@ -219,6 +228,21 @@ def run(
             (destination / "errors.json").write_text(json.dumps(errors, indent=2))
             model.save_pretrained(destination)
             tokenizer.save_pretrained(destination)
+            (destination / "inference.json").write_text(
+                json.dumps(
+                    {
+                        "labels": LABELS,
+                        "mode": mode,
+                        "smoke": smoke,
+                        "base_model": None if smoke else MODEL,
+                        "revision": None if smoke else REVISION,
+                        "temperature": evaluation["temperature"],
+                        "threshold": evaluation["validation_threshold"],
+                    },
+                    indent=2,
+                )
+                + "\n"
+            )
             # Verify adapter serialization and reload, including the trained classification head.
             if mode == "lora":
                 _, fresh = make_model("full", smoke, destination, data, seed)
