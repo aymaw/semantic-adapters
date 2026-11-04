@@ -25,4 +25,5 @@ jobs:
       - run: uv run ruff check . && uv run ruff format --check .
       - run: uv run pytest -q
       - run: uv run python -m semadapt.train --smoke --epochs 1 --out runs/ci
+      - run: uv run python -m semadapt.predict --checkpoint runs/ci/lora-7 --text 'track my order'
       - run: uv run python -m build
