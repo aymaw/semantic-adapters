@@ -1,694 +1,694 @@
 [
   {
-    "mode": "head",
-    "seed": 7,
-    "total_errors": 741,
-    "top_10_by_confidence": [
-      {
-        "text": "can you locate the parcel x5007 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.36351571501313973
-      },
-      {
-        "text": "can you locate the parcel x5029 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3633958197464289
-      },
-      {
-        "text": "can you locate the parcel x5014 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3607924004625925
-      },
-      {
-        "text": "can you locate the parcel x5031 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.35722782547496623
-      },
-      {
-        "text": "can you locate the parcel x5012 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3518958897567027
-      },
-      {
-        "text": "can you locate the parcel x5016 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.34987575241938135
-      },
-      {
-        "text": "can you locate the parcel x5044 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.34413220507930425
-      },
-      {
-        "text": "can you locate the parcel x5033 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.34391588476606133
-      },
-      {
-        "text": "can you locate the parcel x5022 with my travel charger",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3327560487694915
-      },
-      {
-        "text": "start a return for the silver keyboard bought in x7048",
-        "family": "refund/7",
-        "gold": "refund",
-        "predicted": "track",
-        "confidence": 0.33187837832965206
-      }
-    ]
-  },
-  {
-    "mode": "lora",
-    "seed": 7,
-    "total_errors": 826,
-    "top_10_by_confidence": [
-      {
-        "text": "what advantages does red backpack have over blue headphones x5037",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.5022187726106299
-      },
-      {
-        "text": "what advantages does travel charger have over blue headphones x5050",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4979708394569935
-      },
-      {
-        "text": "what advantages does blue headphones have over red backpack x5032",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4948374757672679
-      },
-      {
-        "text": "what advantages does red backpack have over travel charger x5029",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4843476304215479
-      },
-      {
-        "text": "what advantages does travel charger have over red backpack x5027",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.48254469345800505
-      },
-      {
-        "text": "what advantages does blue headphones have over desk lamp x5039",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4734362601608079
-      },
-      {
-        "text": "what advantages does travel charger have over desk lamp x5019",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4511439831897068
-      },
-      {
-        "text": "what advantages does desk lamp have over travel charger x5011",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.45105128638676373
-      },
-      {
-        "text": "what advantages does travel charger have over coffee grinder x5041",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4508366284394855
-      },
-      {
-        "text": "what advantages does desk lamp have over red backpack x5016",
-        "family": "compare/5",
-        "gold": "compare",
-        "predicted": "stock",
-        "confidence": 0.4466590808489023
-      }
-    ]
-  },
-  {
-    "mode": "full",
-    "seed": 7,
-    "total_errors": 760,
-    "top_10_by_confidence": [
-      {
-        "text": "i do not want to cancel x6008 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.3479829863321233
-      },
-      {
-        "text": "i do not want to cancel x6002 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.34751288350387904
-      },
-      {
-        "text": "i do not want to cancel x6038 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.345495920359491
-      },
-      {
-        "text": "i do not want to cancel x6004 just track my coffee grinder",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.3452599394484166
-      },
-      {
-        "text": "i do not want to cancel x6009 just track my green speaker",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.34360117783816396
-      },
-      {
-        "text": "i do not want to cancel x6036 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.34297886971767894
-      },
-      {
-        "text": "i do not want to cancel x6028 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.3429425032570923
-      },
-      {
-        "text": "i do not want to cancel x6006 just track my red backpack",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.3426867344862772
-      },
-      {
-        "text": "i do not want to cancel x6015 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.3426178525152136
-      },
-      {
-        "text": "i do not want to cancel x6047 just track my coffee grinder",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.34259154542313625
-      }
-    ]
-  },
-  {
-    "mode": "head",
-    "seed": 19,
-    "total_errors": 719,
-    "top_10_by_confidence": [
-      {
-        "text": "can you locate the parcel x5029 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.33290993211103126
-      },
-      {
-        "text": "can you locate the parcel x5007 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.32998938264732236
-      },
-      {
-        "text": "can you locate the parcel x5014 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.32487059362045295
-      },
-      {
-        "text": "can you locate the parcel x5031 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.32413232362263716
-      },
-      {
-        "text": "can you locate the parcel x5012 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3207838817805977
-      },
-      {
-        "text": "can you locate the parcel x5016 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3166778930676482
-      },
-      {
-        "text": "can you locate the parcel x5044 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.31366237172655964
-      },
-      {
-        "text": "can you locate the parcel x5033 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3127268077833168
-      },
-      {
-        "text": "keep the desk lamp order x6029 but change where it ships",
-        "family": "address/6",
-        "gold": "address",
-        "predicted": "refund",
-        "confidence": 0.30188443945794585
-      },
-      {
-        "text": "keep the desk lamp order x6052 but change where it ships",
-        "family": "address/6",
-        "gold": "address",
-        "predicted": "refund",
-        "confidence": 0.29845703099983506
-      }
-    ]
-  },
-  {
-    "mode": "lora",
-    "seed": 19,
-    "total_errors": 868,
-    "top_10_by_confidence": [
-      {
-        "text": "i do not want to cancel x6000 just track my blue headphones",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21885924053147168
-      },
-      {
-        "text": "i do not want to cancel x6007 just track my blue headphones",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.2183288865998219
-      },
-      {
-        "text": "i do not want to cancel x6025 just track my blue headphones",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21799438608942784
-      },
-      {
-        "text": "i do not want to cancel x6028 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21782220730803747
-      },
-      {
-        "text": "i do not want to cancel x6008 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21775279976506798
-      },
-      {
-        "text": "i do not want to cancel x6022 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.2177362083259241
-      },
-      {
-        "text": "i do not want to cancel x6057 just track my blue headphones",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.217484026689141
-      },
-      {
-        "text": "i do not want to cancel x6030 just track my blue headphones",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21737124916708536
-      },
-      {
-        "text": "i do not want to cancel x6002 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.21678884948440622
-      },
-      {
-        "text": "can you locate the parcel x5029 with my blue headphones",
-        "family": "track/5",
-        "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.2167460789890912
-      }
-    ]
-  },
-  {
     "mode": "full",
     "seed": 19,
     "total_errors": 600,
     "top_10_by_confidence": [
       {
-        "text": "explain the tradeoffs of fitness watch versus travel charger x7008",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.643024063037691
-      },
-      {
-        "text": "explain the tradeoffs of desk lamp versus travel charger x7034",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6416934147889978
-      },
-      {
-        "text": "explain the tradeoffs of desk lamp versus travel charger x7047",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6407051846974647
-      },
-      {
-        "text": "explain the tradeoffs of fitness watch versus desk lamp x7007",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6396158156277222
-      },
-      {
-        "text": "explain the tradeoffs of fitness watch versus travel charger x7042",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6394141956455894
-      },
-      {
-        "text": "explain the tradeoffs of travel charger versus phone stand x7036",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6392914505389978
-      },
-      {
-        "text": "explain the tradeoffs of phone stand versus desk lamp x7030",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6346865498460927
-      },
-      {
-        "text": "explain the tradeoffs of phone stand versus green speaker x7043",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6329766403946246
-      },
-      {
-        "text": "explain the tradeoffs of travel charger versus wireless mouse x7049",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6324551101515603
-      },
-      {
-        "text": "explain the tradeoffs of travel charger versus blue headphones x7032",
-        "family": "compare/7",
-        "gold": "compare",
-        "predicted": "address",
-        "confidence": 0.6316702234341716
-      }
-    ]
-  },
-  {
-    "mode": "head",
-    "seed": 31,
-    "total_errors": 706,
-    "top_10_by_confidence": [
-      {
-        "text": "do not cancel anything return the delivered blue headphones x6010",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.3229327744714199
-      },
-      {
-        "text": "do not cancel anything return the delivered phone stand x6005",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.3220067485665031
-      },
-      {
-        "text": "do not cancel anything return the delivered phone stand x6050",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.320864288506336
-      },
-      {
-        "text": "do not cancel anything return the delivered blue headphones x6023",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.32081415305857003
-      },
-      {
-        "text": "do not cancel anything return the delivered phone stand x6052",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.32012629064161935
-      },
-      {
-        "text": "do not cancel anything return the delivered phone stand x6037",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.3195695636423703
-      },
-      {
-        "text": "do not cancel anything return the delivered blue headphones x6027",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.31901460050774144
-      },
-      {
-        "text": "do not cancel anything return the delivered phone stand x6019",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.31901209606268893
-      },
-      {
-        "text": "do not cancel anything return the delivered desk lamp x6009",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.31871403570454093
-      },
-      {
-        "text": "do not cancel anything return the delivered blue headphones x6018",
-        "family": "refund/6",
-        "gold": "refund",
-        "predicted": "cancel",
-        "confidence": 0.31736527841552803
-      }
-    ]
-  },
-  {
-    "mode": "lora",
-    "seed": 31,
-    "total_errors": 737,
-    "top_10_by_confidence": [
-      {
-        "text": "can you locate the parcel x5007 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x41835221 just track my green speaker",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.39582311165872724
+        "predicted": "cancel",
+        "confidence": 0.6267320564090002
       },
       {
-        "text": "can you locate the parcel x5029 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x67544362 just track my green speaker",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.39506862560746514
+        "predicted": "cancel",
+        "confidence": 0.6249307288139545
       },
       {
-        "text": "can you locate the parcel x5031 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x42334515 just track my desk lamp",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3886483956108441
+        "predicted": "cancel",
+        "confidence": 0.6236993467587042
       },
       {
-        "text": "can you locate the parcel x5012 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x38584958 just track my phone stand",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3880315019932104
+        "predicted": "cancel",
+        "confidence": 0.6226002165577267
       },
       {
-        "text": "can you locate the parcel x5044 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x19292313 just track my desk lamp",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.38728018247296536
+        "predicted": "cancel",
+        "confidence": 0.6224668052151109
       },
       {
-        "text": "can you locate the parcel x5014 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x26093735 just track my travel charger",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.38463555585997805
+        "predicted": "cancel",
+        "confidence": 0.621717309929627
       },
       {
-        "text": "can you locate the parcel x5016 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x51569226 just track my travel charger",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.384324302373686
+        "predicted": "cancel",
+        "confidence": 0.6215551688824938
       },
       {
-        "text": "can you locate the parcel x5033 with my blue headphones",
-        "family": "track/5",
+        "text": "i do not want to cancel x19357531 just track my travel charger",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3832258670162747
+        "predicted": "cancel",
+        "confidence": 0.6213442048268918
       },
       {
-        "text": "can you locate the parcel x5021 with my red backpack",
-        "family": "track/5",
+        "text": "i do not want to cancel x78066096 just track my travel charger",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3632854441058509
+        "predicted": "cancel",
+        "confidence": 0.6200776474272871
       },
       {
-        "text": "can you locate the parcel x5025 with my red backpack",
-        "family": "track/5",
+        "text": "i do not want to cancel x67910729 just track my green speaker",
+        "family": "track/6",
         "gold": "track",
-        "predicted": "refund",
-        "confidence": 0.3614688006310082
+        "predicted": "cancel",
+        "confidence": 0.6200216453793221
       }
     ]
   },
   {
     "mode": "full",
     "seed": 31,
-    "total_errors": 524,
+    "total_errors": 504,
     "top_10_by_confidence": [
       {
-        "text": "i do not want to cancel x6034 just track my green speaker",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4253335186682022
+        "text": "explain the tradeoffs of fitness watch versus desk lamp x90980127",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.4240992571549217
       },
       {
-        "text": "i do not want to cancel x6053 just track my green speaker",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.42516447296243565
+        "text": "explain the tradeoffs of fitness watch versus desk lamp x49556487",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.423292469569673
       },
       {
-        "text": "i do not want to cancel x6027 just track my wireless mouse",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.42270742269872463
+        "text": "explain the tradeoffs of fitness watch versus travel charger x31599034",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.4230368262730557
       },
       {
-        "text": "i do not want to cancel x6001 just track my wireless mouse",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4213755252321214
+        "text": "explain the tradeoffs of green speaker versus desk lamp x27505405",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.42211486088744254
       },
       {
-        "text": "i do not want to cancel x6052 just track my wireless mouse",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4212635803262135
+        "text": "explain the tradeoffs of desk lamp versus travel charger x90061144",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.42066012239696454
       },
       {
-        "text": "i do not want to cancel x6042 just track my wireless mouse",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4212421752117229
+        "text": "explain the tradeoffs of desk lamp versus travel charger x48605750",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.41985338430014124
       },
       {
-        "text": "i do not want to cancel x6041 just track my fitness watch",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.42026504130886727
+        "text": "explain the tradeoffs of fitness watch versus travel charger x86822382",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.4193323952031017
       },
       {
-        "text": "i do not want to cancel x6044 just track my fitness watch",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4202341883249948
+        "text": "explain the tradeoffs of green speaker versus desk lamp x57383152",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.41888765107760434
       },
       {
-        "text": "i do not want to cancel x6015 just track my desk lamp",
-        "family": "track/6",
-        "gold": "track",
-        "predicted": "cancel",
-        "confidence": 0.4196127515106261
+        "text": "explain the tradeoffs of desk lamp versus wireless mouse x80347879",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.4182822489705055
       },
       {
-        "text": "i do not want to cancel x6019 just track my fitness watch",
+        "text": "explain the tradeoffs of green speaker versus phone stand x69990043",
+        "family": "compare/7",
+        "gold": "compare",
+        "predicted": "address",
+        "confidence": 0.41721449209137956
+      }
+    ]
+  },
+  {
+    "mode": "full",
+    "seed": 7,
+    "total_errors": 803,
+    "top_10_by_confidence": [
+      {
+        "text": "i do not want to cancel x65932007 just track my silver keyboard",
         "family": "track/6",
         "gold": "track",
         "predicted": "cancel",
-        "confidence": 0.419442277477924
+        "confidence": 0.3581491169380233
+      },
+      {
+        "text": "i do not want to cancel x68914686 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35606603103170403
+      },
+      {
+        "text": "i do not want to cancel x68837446 just track my silver keyboard",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35596490921294255
+      },
+      {
+        "text": "i do not want to cancel x27433863 just track my coffee grinder",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35579937960704955
+      },
+      {
+        "text": "i do not want to cancel x73348729 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.3547802726525237
+      },
+      {
+        "text": "i do not want to cancel x56119316 just track my silver keyboard",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35455158694279754
+      },
+      {
+        "text": "i do not want to cancel x35300202 just track my silver keyboard",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.3543974511486075
+      },
+      {
+        "text": "i do not want to cancel x99150023 just track my silver keyboard",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35347480078977733
+      },
+      {
+        "text": "i do not want to cancel x34893400 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.353341667150271
+      },
+      {
+        "text": "i do not want to cancel x72775676 just track my coffee grinder",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "cancel",
+        "confidence": 0.35317130291667315
+      }
+    ]
+  },
+  {
+    "mode": "head",
+    "seed": 19,
+    "total_errors": 718,
+    "top_10_by_confidence": [
+      {
+        "text": "can you locate the parcel x62381764 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.35007844441253255
+      },
+      {
+        "text": "can you locate the parcel x22548782 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3353681485987301
+      },
+      {
+        "text": "can you locate the parcel x89154871 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.33528478086970137
+      },
+      {
+        "text": "can you locate the parcel x78571731 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.33267782434677756
+      },
+      {
+        "text": "can you locate the parcel x83517085 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.33211935168007456
+      },
+      {
+        "text": "keep the desk lamp order x97190249 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.32921944208648324
+      },
+      {
+        "text": "can you locate the parcel x47908511 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3229960753551171
+      },
+      {
+        "text": "keep the desk lamp order x64682217 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.3229667795361524
+      },
+      {
+        "text": "can you locate the parcel x82314614 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3164519019518617
+      },
+      {
+        "text": "can you locate the parcel x13140673 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3148329497446592
+      }
+    ]
+  },
+  {
+    "mode": "head",
+    "seed": 31,
+    "total_errors": 684,
+    "top_10_by_confidence": [
+      {
+        "text": "keep the desk lamp order x97190249 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.3267889222097401
+      },
+      {
+        "text": "can you locate the parcel x62381764 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3227829321701986
+      },
+      {
+        "text": "keep the desk lamp order x64682217 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.31654214859169777
+      },
+      {
+        "text": "can you locate the parcel x22548782 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.31380062088565996
+      },
+      {
+        "text": "can you locate the parcel x89154871 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.31348516640444696
+      },
+      {
+        "text": "can you locate the parcel x83517085 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3107433676601314
+      },
+      {
+        "text": "can you locate the parcel x78571731 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3093944297047949
+      },
+      {
+        "text": "keep the blue headphones order x56566997 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.30479424676633166
+      },
+      {
+        "text": "keep the desk lamp order x33900789 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.30274769993488426
+      },
+      {
+        "text": "keep the desk lamp order x60996858 but change where it ships",
+        "family": "address/6",
+        "gold": "address",
+        "predicted": "refund",
+        "confidence": 0.30224705959663084
+      }
+    ]
+  },
+  {
+    "mode": "head",
+    "seed": 7,
+    "total_errors": 714,
+    "top_10_by_confidence": [
+      {
+        "text": "can you locate the parcel x62381764 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.37681376467485933
+      },
+      {
+        "text": "can you locate the parcel x89154871 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.36343364317347365
+      },
+      {
+        "text": "can you locate the parcel x82314614 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3614947471279428
+      },
+      {
+        "text": "can you locate the parcel x22548782 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.360634912287892
+      },
+      {
+        "text": "can you locate the parcel x78571731 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3604505863342296
+      },
+      {
+        "text": "can you locate the parcel x47908511 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3551860983242783
+      },
+      {
+        "text": "can you locate the parcel x83517085 with my blue headphones",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.35442069704508705
+      },
+      {
+        "text": "can you locate the parcel x13140673 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.35385124240530863
+      },
+      {
+        "text": "can you locate the parcel x60367296 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.35321731310479904
+      },
+      {
+        "text": "can you locate the parcel x62838916 with my desk lamp",
+        "family": "track/5",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.3488318718720489
+      }
+    ]
+  },
+  {
+    "mode": "lora",
+    "seed": 19,
+    "total_errors": 832,
+    "top_10_by_confidence": [
+      {
+        "text": "i do not want to cancel x68914686 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.1983810504353257
+      },
+      {
+        "text": "i do not want to cancel x63151289 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19776051719473836
+      },
+      {
+        "text": "i do not want to cancel x34893400 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19771438232575367
+      },
+      {
+        "text": "i do not want to cancel x89811603 just track my blue headphones",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19756233214994137
+      },
+      {
+        "text": "i do not want to cancel x64694415 just track my blue headphones",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19726984242357196
+      },
+      {
+        "text": "i do not want to cancel x73348729 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.1971907579248646
+      },
+      {
+        "text": "i do not want to cancel x19292313 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19688331478785145
+      },
+      {
+        "text": "i do not want to cancel x17419226 just track my blue headphones",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.1968777789984795
+      },
+      {
+        "text": "i do not want to cancel x64777952 just track my red backpack",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.19684281460231773
+      },
+      {
+        "text": "i do not want to cancel x90519391 just track my desk lamp",
+        "family": "track/6",
+        "gold": "track",
+        "predicted": "refund",
+        "confidence": 0.196677030127076
+      }
+    ]
+  },
+  {
+    "mode": "lora",
+    "seed": 31,
+    "total_errors": 757,
+    "top_10_by_confidence": [
+      {
+        "text": "are there units of silver keyboard ready to purchase x18384693",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.33980950014199374
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x45531912",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.33933755640668817
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x39603430",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.33328869294735164
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x56851304",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.3307944676852816
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x40937599",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.3298111332339028
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x27127535",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.3273125413509328
+      },
+      {
+        "text": "start a return for the silver keyboard bought in x27816787",
+        "family": "refund/7",
+        "gold": "refund",
+        "predicted": "compare",
+        "confidence": 0.32698576506771815
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x38602893",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.3253198449305967
+      },
+      {
+        "text": "start a return for the silver keyboard bought in x84866370",
+        "family": "refund/7",
+        "gold": "refund",
+        "predicted": "compare",
+        "confidence": 0.32484108039903
+      },
+      {
+        "text": "are there units of silver keyboard ready to purchase x35363953",
+        "family": "stock/5",
+        "gold": "stock",
+        "predicted": "compare",
+        "confidence": 0.32439962105313924
+      }
+    ]
+  },
+  {
+    "mode": "lora",
+    "seed": 7,
+    "total_errors": 779,
+    "top_10_by_confidence": [
+      {
+        "text": "what advantages does travel charger have over blue headphones x16575388",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.49878178090273784
+      },
+      {
+        "text": "what advantages does blue headphones have over red backpack x75215187",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.48523528087050993
+      },
+      {
+        "text": "what advantages does red backpack have over blue headphones x40036345",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.4801859746680109
+      },
+      {
+        "text": "what advantages does blue headphones have over desk lamp x72231650",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.47322317367845074
+      },
+      {
+        "text": "what advantages does travel charger have over red backpack x95525690",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.4634894048093074
+      },
+      {
+        "text": "what advantages does red backpack have over travel charger x90869361",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.46008352025975074
+      },
+      {
+        "text": "what advantages does red backpack have over desk lamp x83738227",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.4510446323895713
+      },
+      {
+        "text": "what advantages does travel charger have over coffee grinder x32349726",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.44621623742504407
+      },
+      {
+        "text": "what advantages does travel charger have over desk lamp x88081908",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.44193192216589217
+      },
+      {
+        "text": "what advantages does desk lamp have over travel charger x43692201",
+        "family": "compare/5",
+        "gold": "compare",
+        "predicted": "stock",
+        "confidence": 0.4396437788039552
       }
     ]
   }
