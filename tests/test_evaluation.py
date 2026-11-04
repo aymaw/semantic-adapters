@@ -44,3 +44,32 @@ def test_no_admissible_threshold_abstains():
 def test_threshold_uses_maximum_admissible_coverage():
     p = np.array([[0.6, 0.4], [0.8, 0.2], [0.9, 0.1]])
     assert select_threshold(p, np.array([1, 0, 0]), target=1.0, min_accepted=2) == 0.8
+
+
+def test_template_bootstrap_keeps_repeated_utterances_together():
+    p = np.array([[0.9, 0.1], [0.1, 0.9], [0.9, 0.1], [0.1, 0.9]])
+    labels = np.array([0, 0, 1, 1])
+    groups = np.array(["a", "b", "c", "d"])
+    a = metrics(p, labels, groups=groups)
+    b = metrics(np.repeat(p, 10, axis=0), np.repeat(labels, 10), groups=np.repeat(groups, 10))
+    assert a["macro_f1_template_bootstrap_95"] == b["macro_f1_template_bootstrap_95"]
+    assert a["per_class"]["0"]["support"] == 2
+
+
+@pytest.mark.parametrize("temperature", [0, -1, float("nan")])
+def test_invalid_temperature_is_rejected(temperature):
+    with pytest.raises(ValueError):
+        probabilities([[0.0, 1.0]], temperature)
+
+
+def test_order_ids_have_fixed_width_without_partition_prefix():
+    import re
+
+    data = generate(per_family=10)
+    ids = [
+        re.search(r"x\d+", r["text"]).group()
+        for k in ("train", "validation", "test")
+        for r in data[k]
+    ]
+    assert len(ids) == len(set(ids))
+    assert all(len(value) == 9 for value in ids)
