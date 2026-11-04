@@ -82,14 +82,20 @@ ITEMS = [
 
 
 def generate(seed=23, per_family=60):
+    if per_family < 1:
+        raise ValueError("per_family must be positive")
     rng = random.Random(seed)
+    # Independent, fixed-width order IDs must not encode the template/split index.
+    id_rng = random.Random(seed + 10000)
+    count = sum(len(TEMPLATES[label]) for label in LABELS) * per_family
+    identifiers = iter(id_rng.sample(range(10_000_000, 100_000_000), count))
     splits = {k: [] for k in ("train", "validation", "test", "ood")}
     for label in LABELS:
         for family, template in enumerate(TEMPLATES[label]):
             split = "train" if family < 4 else "validation" if family == 4 else "test"
             for i in range(per_family):
                 item, other = rng.sample(ITEMS, 2)
-                text = template.format(item=item, other=other, num=f"x{family}{i:03d}")
+                text = template.format(item=item, other=other, num=f"x{next(identifiers)}")
                 splits[split].append(
                     {"text": text, "label": LABELS.index(label), "family": f"{label}/{family}"}
                 )
